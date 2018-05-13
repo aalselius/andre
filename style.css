@@ -1,0 +1,351 @@
+/* General rules */
+
+body,
+html,
+.main {
+    height: 100%;
+    margin: 0;
+    font-family: 'Chewy', cursive;
+}
+
+
+h1 {
+    font-size: 100px;
+    margin: 0;
+    padding: 20px;
+    color: yellow;
+    text-shadow: 3px 1px 10px black;
+}
+
+section {
+    min-height: 100%;
+    height:100%;
+}
+
+.h2Title {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Page rules */
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#top {
+    position: relative;
+}
+
+.header {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nav {
+    background-color: lightgreen;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+#alphabet {
+    background-image: url("background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#numbers {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#ball {
+    background-color:black;
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about {
+    background-color: darkseagreen;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobilePage {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    background-color: skyblue;
+}
+
+/* Header page */
+
+#textAndre path {
+    opacity: 0;
+    fill: none !important;
+    stroke-width: 5px;
+}
+
+#letterA {
+    stroke: red;
+}
+
+#letterN {
+    stroke: #ff7300;
+}
+
+#letterD {
+    stroke: #ffe422;
+}
+
+#letterR {
+    stroke: #0edd0e;
+}
+
+#letterE {
+    stroke: #1a1ae2;
+}
+
+#ballonContainer {
+    position: fixed;
+    bottom: 75px;
+    right: 30px;
+}
+
+#arrow {
+    width: 150px;
+    height: 150px;
+}
+
+#ballon {
+    width: 100px;
+    height: 100px;
+}
+
+/* Nav page */
+
+.centerNavigation {
+    width:90%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navigation {
+    height: 300px;
+    width:250px;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-family: 'Chewy', cursive;
+    font-size: 55px;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+    position:relative;  
+}
+
+#nav a {
+    position: static;
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.navigationText {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Ball page */
+
+#ballContainer {
+    background-color: red;
+    width:500px;
+    height:500px;
+    margin: 0 auto;
+}
+
+.spinnerPicture {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.waitText {
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+/* About page */
+
+.infoText {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    border: 5px solid darkgreen;
+    padding: 20px;
+    color: black;
+    font-size: 30px;
+    overflow-y: auto;
+}
+
+/* Alphabet and number page */
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.link {
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    position: relative;
+}
+
+#alphabet a {
+    font-family: 'Chewy', cursive;
+    font-size: 80px;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#numbers a {
+    font-family: 'Chewy', cursive;
+    font-size: 80px;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#alphabet:focus {
+    outline: none;
+}
+
+#alphabet:focus {
+    outline: none;
+}
+
+
+/* Alphabet and number display pages */ 
+
+.outerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 700px;
+}
+
+.innerContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imageContainer>img {
+    width: 200px;
+    height: 200px;
+}
+
+#letterDisplay {
+    display:none;
+    background-color: blanchedalmond;
+    position: relative;
+    top:-100vh;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#numberDisplay {
+    display:none;
+    background-color: lime;
+    position: relative;
+    top:-100vh;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.letterPicture {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 300px;
+    color: red;
+    text-align: center;
+    text-shadow: 7px 3px 6px #000000;
+}
+
+.letterPicture img {
+    max-height: 90vh;
+    max-width: 100%;
+}
+
+.numberPicture {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 300px;
+    color: red;
+    text-align: center;
+    text-shadow: 7px 3px 6px #000000;
+}
+
+/* Mobile page */
+
+.mobileInfo {
+    width: 90%;
+    margin: 0 auto;    
+}
+
+/* Media queries */
+
+@media screen and (max-width: 740px) {
+    .mobilePage {
+        display: flex;
+    }
+    .noMobile,
+    #alphabet,
+    #nav,
+    #numbers,
+    #about,
+    #ballonContainer {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    #ballNav {
+        display: none;
+    }
+}
